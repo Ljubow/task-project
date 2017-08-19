@@ -152,24 +152,23 @@ function ready() {
     const len = cars.children.length;
     for (i = 0; i < len; i++) {
 
-        content += `<div class="card-deck">`+
-      `<div class='card text-white bg-secondary mb-3' style='max-width: 235px;'>`+
-    `<img class='scard-img-top' src='${cars.children[i].url}' alt='Card image cap'>`+
-    `<div class='card-body'>`+
-    `<div class='card-header'><div>${cars.children[i].name}</div></div>`+
-      `<p class='card-name'><div class='row'><div class='col-sm-6'>Name :</div><div class='col-sm-6'>${cars.children[i].car}</div></div></p>`+
-      `<p class='card-price'><div class='row'><div class='col-sm-6'>Price :</div><div class='col-sm-6'>${cars.children[i].price}$</div></p>`+
-`</div>`+
-      `<div class='card-footer'>`+
-    `<button type='button' class='btn btn-outline-light' data-toggle='collapse' data-target='#${cars.children[i].id}'>More</button>`+
-    `<div id='${cars.children[i].id}' class='collapse'>`+
-    `<p class='card-link'><div class='row'><div class='col-sm-6'>Link:</div><div class='col-sm-6'>${cars.children[i].link}</div></div></p>`+
-    `<p class='card-top_speed'><div class='row'><div class='col-sm-6'>Top-speed:</div><div class='col-sm-6'>${cars.children[i].top_speed}</div></div></p>`+
-    `<p class='card-fuel'><div class='row'><div class='col-sm-6'>Fuel:</div><div class='col-sm-6'>${cars.children[i].fuel}</div></div></p>`+
-    `</div>`+
-    `</div>`+
-    `</div>`+
-    `</div>`;
+        content += `<div class="card-deck">` +
+            `<div class='card text-white bg-secondary mb-3' style='max-width: 350px;'>` +
+            `<img class='scard-img-top' src='${cars.children[i].url}' alt='Card image cap'>` +
+            `<div class='card-body'>` +
+            `<div class='card-header'><div>${cars.children[i].name}</div></div>` +
+            `<p class='card-name'><div class='row'><div class='col-sm-12'>Name :</div><div class='col-sm-12'>${cars.children[i].car}</div></div></p>` +
+            `<p class='card-price'><div class='row'><div class='col-sm-6'>Price :</div><div class='col-sm-6'>${cars.children[i].price}$</div></p>` +
+            `<button type='button' class='btn btn-outline-light' data-toggle='collapse' data-target='#${cars.children[i].id}'>More</button>` +
+            `</div>` +
+            `<div id='${cars.children[i].id}' class='collapse'>` +
+            `<p class='card-link'><div class='row'><div class='col-sm-6'>Link:</div><div class='col-sm-6'>${cars.children[i].link}</div></div></p>` +
+            `<p class='card-top_speed'><div class='row'><div class='col-sm-6'>Top-speed:</div><div class='col-sm-6'>${cars.children[i].top_speed}</div></div></p>` +
+            `<p class='card-fuel'><div class='row'><div class='col-sm-6'>Fuel:</div><div class='col-sm-6'>${cars.children[i].fuel}</div></div></p>` +
+
+            `</div>` +
+            `</div>` +
+            `</div>`;
     }
     const elem = document.getElementById('first');
     console.log(elem);

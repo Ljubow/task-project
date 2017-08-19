@@ -7,6 +7,6 @@ h1 {
     text-align:  center;
    }
    .center {
-       width: 805px; /* Ширина элемента в пикселах */
-       margin: auto; /* Выравниваем по центру */
-}
+       width: 1000px; 
+       margin: auto;
+     }
