@@ -158,14 +158,13 @@ function ready() {
             `<div class='card-body'>` +
             `<div class='card-header'><div>${cars.children[i].name}</div></div>` +
             `<p class='card-name'><div class='row'><div class='col-sm-12'>Name :</div><div class='col-sm-12'>${cars.children[i].car}</div></div></p>` +
-            `<p class='card-price'><div class='row'><div class='col-sm-6'>Price :</div><div class='col-sm-6'>${cars.children[i].price}$</div></p>` +
+            `<p class='card-price'><div class='row'><div class='col-sm-6'>Price :</div><div class='col-sm-6'>${cars.children[i].price}$</div></div></p>` +
             `<button type='button' class='btn btn-outline-light' data-toggle='collapse' data-target='#${cars.children[i].id}'>More</button>` +
             `</div>` +
             `<div id='${cars.children[i].id}' class='collapse'>` +
             `<p class='card-link'><div class='row'><div class='col-sm-6'>Link:</div><div class='col-sm-6'>${cars.children[i].link}</div></div></p>` +
             `<p class='card-top_speed'><div class='row'><div class='col-sm-6'>Top-speed:</div><div class='col-sm-6'>${cars.children[i].top_speed}</div></div></p>` +
             `<p class='card-fuel'><div class='row'><div class='col-sm-6'>Fuel:</div><div class='col-sm-6'>${cars.children[i].fuel}</div></div></p>` +
-
             `</div>` +
             `</div>` +
             `</div>`;
