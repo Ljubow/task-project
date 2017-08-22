@@ -10,11 +10,10 @@ function ready() {
         "children": [{
             "id": 20,
             "name": "BMW",
-            "link": "https://www.bmw.com/en/all-models.html",
+            "link": "https://www.bmw.com",
             "top_speed": 210,
             "fuel": 7.7,
             "car": "BMW 3 Series Sedan",
-            "price": 40.000,
             "url": "img/BMW-3-Series-Sedan_ModelCard.png",
             "children": [{
                     "id": 30,
@@ -56,11 +55,10 @@ function ready() {
         }, {
             "id": 21,
             "name": "Mercedes-Benz",
-            "link": "https://www.mbusa.com/mercedes/vehicles",
+            "link": "https://www.mbusa.com",
             "top_speed": 241,
             "fuel": 8.1,
             "car": "C-CLASS SEDAN",
-            "price": 40.250,
             "url": "img/2017-C-SEDAN-AV-D.png",
             "children": [{
                     "id": 41,
@@ -102,11 +100,10 @@ function ready() {
         }, {
             "id": 22,
             "name": "Volkswagen",
-            "link": "http://www.vw.com/models/",
+            "link": "http://www.vw.com/",
             "top_speed": 170,
             "fuel": 6.7,
             "car": "Passat S",
-            "price": 22.440,
             "url": "img/iris.png",
             "children": [{
                     "id": 52,
@@ -157,10 +154,11 @@ function ready() {
             `<img class='scard-img-top' src='${cars.children[i].url}' alt='Card image cap'>` +
             `<div class='card-body'>` +
             `<div class='card-header'><div>${cars.children[i].name}</div></div>` +
-            `<p class='card-name'><div class='row'><div class='col-sm-12'>Name :</div><div class='col-sm-12'>${cars.children[i].car}</div></div></p>` +
-            `<p class='card-price'><div class='row'><div class='col-sm-6'>Price :</div><div class='col-sm-6'>${cars.children[i].price}$</div></div></p>` +
+            `<p class='card-name'><div class='row'><div class='col-sm-12'>Link :</div><div class='col-sm-12'>${cars.children[i].link}</div></div></p>` +
+            `<button type='button' class='btn btn-outline-light' data-toggle='modal'  id='myBtn' data-target=${cars.children[i].name}>View Models</button></br></br>` +
             `<button type='button' class='btn btn-outline-light' data-toggle='collapse' data-target='#${cars.children[i].id}'>More</button>` +
             `</div>` +
+`<div id='${cars.children[i].name}' class='modal'>` +
             `<div id='${cars.children[i].id}' class='collapse'>` +
             `<p class='card-link'><div class='row'><div class='col-sm-6'>Link:</div><div class='col-sm-6'>${cars.children[i].link}</div></div></p>` +
             `<p class='card-top_speed'><div class='row'><div class='col-sm-6'>Top-speed:</div><div class='col-sm-6'>${cars.children[i].top_speed}</div></div></p>` +
@@ -172,5 +170,28 @@ function ready() {
     const elem = document.getElementById('first');
     console.log(elem);
     elem.innerHTML = content;
+
+    let modelsC = '';
+    const ln = cars.children.children;
+    for (i = 0; i < ln; i++) {
+        modelsC += `<div>${cars.children.children[i].id}</div>`;
+    }
+
+
+    const btn = document.getElementById("myBtn");
+    if (btn.addEventListener) {
+        btn.addEventListener("click", myFunction);
+    }
+
+    function myFunction() {
+
+let modalContent=document.querySelector('div.modal-body');
+        modalContent.innerHTML = modelsC;
+        $('#modal').modal();
+    }
+    // const element = document.getElementById('modal')
+    // element.innerHTML=modalContent;
 };
+
+
 document.addEventListener('DOMContentLoaded', ready);
