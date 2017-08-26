@@ -240,43 +240,54 @@ const cars = {
 const ready = () => {
     let content = '';
     for (let i = 0; i < cars.children.length; i++) {
-        content +=  `<div class="card-deck">` +
-                    `<div class='card text-white bg-secondary mb-3' style='max-width: 20rem;'>` +
-                    `<img class='scard-img-top' src='${cars.children[i].url}' alt='Card image cap'>` +
-                    `<div class='card-body'>` +
-                    `<div class='card-header'><div>${cars.children[i].name}</div></div>` +
-                    `<p class='card-name'><div class='row'><div class='col-sm-12'>Link :</div><div class='col-sm-12'>${cars.children[i].link}</div></div></p>` +
-                    `<button type='button' id='myBtn' class='btn btn-outline-light' data-toggle='modal' data-id='${cars.children[i].id}' data-target='${cars.children[i].id}'>View Models</button></br></br>` +
-                    `<div  id='${cars.children[i].id}' class='modal'></div>` +
-                    `<button type='button' class='btn btn-outline-light' data-toggle='collapse' data-target='${cars.children[i].name}'>More</button>` +
-                    `<div id='${cars.children[i].name}' class='collapse'>` +
-                    `<p class='card-link'><div class='row'><div class='col-sm-4'>Models:</div><div class='col-sm-4'>${cars.children[i].models}</div></div></p>` +
-                    `</div>` +
-                    `</div>` +
-                    `</div>` +
-                    `</div>`;
+        content += `<div class="card-deck">` +
+            `<div class='card text-white bg-secondary mb-3' style='max-width: 20rem;'>` +
+            `<img class='scard-img-top' src='${cars.children[i].url}' alt='Card image cap'>` +
+            `<div class='card-body'>` +
+            `<div class='card-header'><div>${cars.children[i].name}</div></div>` +
+            `<p class='card-name'><div class='row'><div class='col-sm-12'>` +
+            `Link :</div><div class='col-sm-12'>${cars.children[i].link}</div></div></p>` +
+            `<button type='button' id='myBtn' class='btn btn-outline-light' data-toggle='modal'` +
+            `data-id='${cars.children[i].id}' data-target='${cars.children[i].id}'>View Models</button></br></br>` +
+            `<div  id='${cars.children[i].id}' class='modal'></div>` +
+            `<button type='button' class='btn btn-outline-light' data-toggle='collapse'` +
+            `data-target='#${cars.children[i].name}'>More</button>` +
+            `<div id='${cars.children[i].name}' class='collapse'>` +
+            `<p class='card-link'><div class='row'><div class='col-sm-4'>` +
+            `Models:</div><div class='col-sm-4'>${cars.children[i].models}</div></div></p>` +
+            `</div>` +
+            `</div>` +
+            `</div>` +
+            `</div>`;
     }
 
     const header = document.getElementById('exampleModalLabel');
     // TODO: get content of modal
-    // const content = document.getElementById('modalContent');
+    const body = document.getElementById('modalContent');
     const modal = document.getElementById('modal');
     const elem = document.getElementById('cars-list');
-       elem.innerHTML = content;
-       elem.addEventListener('click', function(e){
-         console.log(e.target.getAttribute('data-id'))
-         const typeId = e.target.getAttribute('data-id');
-         const car = cars.children.find((type) => {
-           return type.id == typeId;
-         });
-         header.innerHTML = car.name;
-         // TODO: write loop for car.children - models
-      // for(i=0; i<car.chldren; i++){
-      //
-      // }
-         // add final string of models to modal content
-         $('#modal').show();
-       })
+    elem.innerHTML = content;
+    elem.addEventListener('click', function(e) {
+        // console.log(e.target.getAttribute('data-id'))
+        const typeId = e.target.getAttribute('data-id');
+        if (!typeId) return;
+        const car = cars.children.find((type) => {
+            return type.id == typeId;
+        });
+        header.innerHTML = car.name;
 
-};
+        // TODO: write loop for car.children - models
+        let models = '';
+        for (i = 0; i < car.children.length; i++) {
+            models += `<li class="list-group-item list-group-item-info"><div class='row'><div class='col-md-6'>` +
+                      `Models:</div><div class='col-md-6 ml-auto'>${car.children[i].name}</div></div></li>` +
+                      `<li class="list-group-item list-group-item-dark"><div class='row'><div class='col-md-6'>` +
+                      `Price:</div><div class='col-md-6 ml-auto'>${car.children[i].price}$</div></div></li>`
+
+        }
+        body.innerHTML = models;
+        //  add final string of models to modal content
+        $('#modal').modal();
+    })
+}
 document.addEventListener('DOMContentLoaded', ready);
