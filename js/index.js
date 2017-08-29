@@ -17,7 +17,7 @@ const cars = {
                     "top_speed": 210,
                     "price": 40.000,
                     "fuel": 7.7,
-                    "url": "BMW-3-Series-Sedan_ModelCard.png"
+                    "url": "img/BMW-3-Series-Sedan_ModelCard1.png"
                 },
                 {
                     "id": 32,
@@ -25,7 +25,7 @@ const cars = {
                     "top_speed": 210,
                     "price": 34.235,
                     "fuel": 7.7,
-                    "url": "bmw-iperformance-330e-flyout-890x501.png"
+                    "url": "img/bmw-iperformance-330e-flyout-890x501.png"
                 },
                 {
                     "id": 33,
@@ -33,7 +33,7 @@ const cars = {
                     "top_speed": 250,
                     "price": 62.400,
                     "fuel": 8.1,
-                    "url": "bmw-modelfinder-g30-posi-stage2-890x501.png"
+                    "url": "img/bmw-modelfinder-g30-posi-stage2-890x501.png"
                 },
                 {
                     "id": 35,
@@ -41,7 +41,7 @@ const cars = {
                     "top_speed": 247,
                     "price": 65.000,
                     "fuel": 8.3,
-                    "url": "bmw-mperformance-x4-m40i-flyout-890x501.png"
+                    "url": "img/bmw-mperformance-x4-m40i-flyout-890x501.png"
                 },
                 {
                     "id": 36,
@@ -49,7 +49,7 @@ const cars = {
                     "top_speed": 25,
                     "price": 63.495,
                     "fuel": 8.6,
-                    "url": "BMW-X6_ModelCard.png"
+                    "url": "img/BMW-X6_ModelCard.png"
                 },
                 {
                     "id": 38,
@@ -57,7 +57,7 @@ const cars = {
                     "top_speed": 250,
                     "price": 48.345,
                     "fuel": 8.3,
-                    "url": "BMW-2series-cabrio-modelfinder-stage2-890x501-01.png"
+                    "url": "img/BMW-2series-cabrio-modelfinder-stage2-890x501-01.png"
                 },
                 {
                     "id": 39,
@@ -65,7 +65,7 @@ const cars = {
                     "top_speed": 250,
                     "price": 45.500,
                     "fuel": 8.3,
-                    "url": "BMW-2series-cabrio-modelfinder-stage2-890x501-03.png"
+                    "url": "img/BMW-2series-cabrio-modelfinder-stage2-890x501-03.png"
                 },
                 {
                     "id": 40,
@@ -73,7 +73,7 @@ const cars = {
                     "top_speed": 250,
                     "price": 76.200,
                     "fuel": 8.8,
-                    "url": "BMW-4-Series-Convertible-ModelCard.png.jpg"
+                    "url": "img/BMW-4-Series-Convertible-ModelCard.png"
                 }
             ]
         },
@@ -89,7 +89,7 @@ const cars = {
                     "top_speed": 241,
                     "price": 40.250,
                     "fuel": 8.1,
-                    "url": "2017-C-SEDAN-AV-D.png"
+                    "url": "img/untitled.png"
                 },
                 {
                     "id": 43,
@@ -97,7 +97,7 @@ const cars = {
                     "top_speed": 241,
                     "price": 52.950,
                     "fuel": 7.7,
-                    "url": "2017-E-SEDAN-AV-D.png"
+                    "url": "img/2017-E-SEDAN-AV-D.png"
                 },
                 {
                     "id": 44,
@@ -105,7 +105,7 @@ const cars = {
                     "top_speed": 430,
                     "price": 96.600,
                     "fuel": 7.7,
-                    "url": "2017-S-SEDAN-AV-D.png"
+                    "url": "img/2017-S-SEDAN-AV-D.png"
                 },
                 {
                     "id": 46,
@@ -113,7 +113,7 @@ const cars = {
                     "top_speed": 258,
                     "price": 32.700,
                     "fuel": 8.1,
-                    "url": "2017-CLA-COUPE-AV-D.png"
+                    "url": "img/2017-CLA-COUPE-AV-D.png"
                 },
                 {
                     "id": 47,
@@ -121,7 +121,7 @@ const cars = {
                     "top_speed": 258,
                     "price": 43.200,
                     "fuel": 8.1,
-                    "url": "2017-C-COUPE-AV-D.png"
+                    "url": "img/2017-C-COUPE-AV-D.png"
                 },
                 {
                     "id": 48,
@@ -129,7 +129,7 @@ const cars = {
                     "top_speed": 273,
                     "price": 58.900,
                     "fuel": 8.3,
-                    "url": "2018-E-E400-COUPE-D.png"
+                    "url": "img/2018-E-E400-COUPE-D.png"
                 },
                 {
 
@@ -138,7 +138,7 @@ const cars = {
                     "top_speed": 243,
                     "price": 33.400,
                     "fuel": 7.7,
-                    "url": "2018-GLA-GLA250-SUV-AV-D.png"
+                    "url": "img/2018-GLA-GLA250-SUV-AV-D.png"
                 },
                 {
                     "id": 50,
@@ -146,7 +146,7 @@ const cars = {
                     "top_speed": 258,
                     "price": 40.050,
                     "fuel": 7.7,
-                    "url": "2017-GLC-SUV-AV-D.png"
+                    "url": "img/2017-GLC-SUV-AV-D.png"
                 },
                 {
                     "id": 51,
@@ -154,7 +154,7 @@ const cars = {
                     "top_speed": 265,
                     "price": 46.600,
                     "fuel": 8.1,
-                    "url": "2017-GLC-COUPE-AV-D.png"
+                    "url": "img/2017-GLC-COUPE-AV-D.png"
                 }
             ]
         },
@@ -170,21 +170,21 @@ const cars = {
                     "top_speed": 170,
                     "tuel": 6.7,
                     "price": 22.440,
-                    "url": "iris.png"
+                    "url": "img/untitled1.png"
                 }, {
                     "id": 54,
                     "name": "Passat R-Line",
                     "top_speed": 170,
                     "fuel": 6.7,
                     "price": 23.975,
-                    "url": "iris (1).png"
+                    "url": "img/iris (1).png"
                 }, {
                     "id": 55,
                     "name": "Passat SE",
                     "top_speed": 195,
                     "fuel": 6.7,
                     "price": 25.495,
-                    "url": "iris (2).png"
+                    "url": "img/iris (2).png"
                 },
                 {
                     "id": 57,
@@ -192,21 +192,21 @@ const cars = {
                     "top_speed": 235,
                     "fuel": 6,
                     "price": 30.500,
-                    "url": "iris (3).png"
+                    "url": "img/iris (3).png"
                 }, {
                     "id": 58,
                     "name": "Launch Edition",
                     "top_speed": 250,
                     "fuel": 6.8,
                     "price": 33.500,
-                    "url": "iris (4).png"
+                    "url": "img/iris (4).png"
                 }, {
                     "id": 59,
                     "name": "Launch Edition with 4MOTION",
                     "top_speed": 250,
                     "fuel": 7.7,
                     "price": 35.300,
-                    "url": "iris (5).png"
+                    "url": "img/iris (5).png"
                 },
                 {
 
@@ -215,21 +215,21 @@ const cars = {
                     "top_speed": 170,
                     "fuel": 5.8,
                     "price": 25.975,
-                    "url": "iris (6).png"
+                    "url": "img/iris (6).png"
                 }, {
                     "id": 62,
                     "name": "Golf Wolfsburg",
                     "top_speed": 170,
                     "fuel": 6,
                     "price": 21.595,
-                    "url": "iris (7).png"
+                    "url": "img/iris (7).png"
                 }, {
                     "id": 63,
                     "name": "Golf GTI Sport",
                     "top_speed": 220,
                     "fuel": 7.1,
                     "price": 27.995,
-                    "url": "iris (8).png"
+                    "url": "img/iris (8).png"
                 }
             ]
         }
@@ -275,18 +275,24 @@ const ready = () => {
             return type.id == typeId;
         });
         header.innerHTML = car.name;
-
-        // TODO: write loop for car.children - models
-        let models = '';
+        const inner = document.getElementById('hhhh');
+        let className = 'carousel-item ';
+        let image = '';
         for (i = 0; i < car.children.length; i++) {
-            models += `<li class="list-group-item list-group-item-info"><div class='row'><div class='col-md-6'>` +
-                      `Models:</div><div class='col-md-6 ml-auto'>${car.children[i].name}</div></div></li>` +
-                      `<li class="list-group-item list-group-item-dark"><div class='row'><div class='col-md-6'>` +
-                      `Price:</div><div class='col-md-6 ml-auto'>${car.children[i].price}$</div></div></li>`
+            let className = 'carousel-item';
 
+            if (i === 0) {
+                className += ' active';
+            }
+            image += `<div class='${className}'>` +
+                     `<img class="d-block w-100" src='${car.children[i].url}'>` +
+                     `<h6 class="text-dark"><div class='row'><div class='col-sm-6'>` +
+                     `Model: </div><div class='col-sm-6'>${car.children[i].name}</div></div></h6>` +
+                     `</div>` +
+                     `</div>`
         }
-        body.innerHTML = models;
-        //  add final string of models to modal content
+
+        inner.innerHTML = image;
         $('#modal').modal();
     })
 }
